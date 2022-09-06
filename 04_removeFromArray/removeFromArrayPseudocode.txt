@@ -1,0 +1,7 @@
+Implement a function that takes an array and 
+some other arguments then removes the other arguments from that array:
+
+function removeFromArray
+loop through arguments
+if i === to arr item, remove from array
+else continue to next array item

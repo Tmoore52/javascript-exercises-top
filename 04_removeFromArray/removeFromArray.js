@@ -1,9 +1,14 @@
-const removeFromArray = function (arr, splice) {
-    console.log(arr);
-    let removed = arr.splice(splice-1, 1);
-    console.log(arr);
-    return arr;
-  };
+const removeFromArray = function (array, ...args) {
+  const newArray =[];
+  
+  array.forEach((element) => {
+    if (!args.includes(element)) {
+      newArray.push(element);
+    }
+  })
+    return newArray
+};
+  
   
 // Do not edit below this line
 module.exports = removeFromArray;

@@ -1,0 +1,5 @@
+take two numbers
+assign variables
+loop through the variables. starting with x and ending at y
+final sum =+
+return final sum after loop

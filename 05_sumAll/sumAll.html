@@ -1,15 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
 const sumAll = function (x, y) {
   let finalSum = 0;
 
   if (x < 0 || y < 0) {
+    console.log("error")
     return "ERROR";
   } else if (typeof x === "string" || typeof y === "string") {
-    return "ERROR";
-  } else if (typeof x === "object" || typeof y === "object") {
+    console.log("string");
     return "ERROR";
   } else if (x > y) {
     let min = y;
     let max = x;
+    console.log(min);
+    console.log(max);
+
     for (i = min; i < max + 1; i++) {
       finalSum += i;
     }
@@ -23,6 +36,8 @@ const sumAll = function (x, y) {
     return finalSum;
   }
 };
-
-// Do not edit below this line
-module.exports = sumAll;
+sumAll(1,4);
+sumAll(10, "90");
+   </script> 
+</body>
+</html>
